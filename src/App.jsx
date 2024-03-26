@@ -63,7 +63,7 @@ const App = () => {
 
   return (
     <>
-      <div className="main_container">
+      <div className="main_container" id="main_container">
         <div className="stats_container">
           <p
             data-testid="remaining_cards"
