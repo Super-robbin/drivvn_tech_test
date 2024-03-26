@@ -26,8 +26,8 @@ A front-end web application allowing users to draw cards by clicking a button. I
 ![React Testing Library](https://img.shields.io/badge/Testing-library-orange?logo=testinglibrary)
 
 **Deployment:**
-![Render](https://img.shields.io/badge/Render-green?logo=render)
-Deployment link: ![Drivvn Tech Test](https://drivvn-tech-test.onrender.com)
+![Render](https://img.shields.io/badge/Render-green?logo=render) <br>
+Deployment link: [Drivvn Tech Test](https://drivvn-tech-test.onrender.com)
 
 ## 💻 Running the project
 
