@@ -1,6 +1,6 @@
 #root {
   max-width: 100%;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   line-height: 1.5;
   font-weight: 400;
   font-synthesis: none;
@@ -71,4 +71,16 @@
 .draw_btn:hover {
   background-color: #2870be;
   box-shadow: 0 1px 6px 0 #20212447;
+}
+
+.matching_final_result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.matching_final_result > p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
 }

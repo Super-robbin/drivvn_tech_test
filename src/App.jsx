@@ -46,6 +46,21 @@ const App = () => {
     drawnCards[drawnCards.length - 2]?.suit ===
       drawnCards[drawnCards.length - 1]?.suit && "SNAP SUIT!";
 
+  let valueMatches = 0;
+  let suitMatches = 0;
+
+  for (let i = 1; i < drawnCards.length; i++) {
+    if (drawnCards[i - 1]?.value === drawnCards[i]?.value) {
+      valueMatches++;
+    }
+  }
+
+  for (let i = 1; i < drawnCards.length; i++) {
+    if (drawnCards[i - 1]?.suit === drawnCards[i]?.suit) {
+      suitMatches++;
+    }
+  }
+
   return (
     <>
       <div className="main_container">
@@ -80,9 +95,23 @@ const App = () => {
             )}
           </div>
         </div>
-        <button data-testid="draw_btn" className="draw_btn" onClick={drawCard}>
-          Draw card
-        </button>
+        {deckInfo.remainingCards !== 0 ? (
+          <button
+            data-testid="draw_btn"
+            className="draw_btn"
+            onClick={drawCard}
+          >
+            Draw card
+          </button>
+        ) : (
+          <div
+            data-testid="matching_final_result"
+            className="matching_final_result"
+          >
+            <p>VALUE MATCHES: {valueMatches}</p>
+            <p>SUIT MATCHES: {suitMatches}</p>
+          </div>
+        )}
       </div>
     </>
   );
